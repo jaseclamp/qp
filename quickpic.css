@@ -1,0 +1,51 @@
+@import url('http://fonts.googleapis.com/css?family=Lobster');
+
+ #imagespopup { width: 80%; left: 10%; } 
+ 
+ #overlay {
+  background-color: #000;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: .4;
+  width: 100%;
+  z-index: 10;
+}
+.close_button {
+  color: #c8102e;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  text-decoration: none;
+}
+.close_button:hover { text-decoration:none; }
+.mowdal {
+  background-color: #fff;
+  box-shadow: 1px 2px 13px 0 rgba(50,50,50,.66);
+  left: 35%;
+  position: absolute;
+  padding: 20px;
+  top: 100px;
+  z-index: 11;
+}
+
+.mowdal h2 { margin-top: 0;}
+
+#overlay, .mowdal { display:none; }
+
+.content-header { display:none;}
+
+.qplogo { 
+	font-family: 'Lobster', cursive; 
+	color: #312002; 
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+}
+h1.qplogo {
+	padding: 5px; 
+	margin: 0; 
+}
+h1.qplogo a { color: #312002; }
+h1.qplogo a:hover { color: #312002; text-decoration:none; }

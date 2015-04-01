@@ -1,0 +1,6 @@
+Quickpic				app/code/local/Refracter/Quickpic 
+quickpic.xml			app/design/adminhtml/default/default/layout/quickpic.xml 
+template				app/design/adminhtml/default/default/template/quickpic
+Refracter_Quickpic.xml	app/etc/modules/Refracter_Quickpic.xml
+quickpic.js 			js/quickpic/quickpic.js 
+quickpic.css 			skin/adminhtml/base/default/css/quickpic/quickpic.css 

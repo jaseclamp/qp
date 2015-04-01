@@ -1,0 +1,22 @@
+<?php 
+
+$data = $this->getRemoteData(); 
+
+?>
+
+<h1 class="qplogo">QuickPic</h1>
+<p>
+
+The products shown below are ones from your catalog that do not yet have an image associated. Select the ones for which you want to get images from Google Images or click "Get Pics" on individual rows to get images from Google Images. You are responsible for selecting only those images you have rights to use (e.g. ones from supplier websites). Note that this extension comes with 10 free credits to try the service out - to get images for more products you will have to purchase credits at a cost of $<span class="cost"><?php echo $data['costPerFiveHudred'];?></span> per 500 credits. 
+
+<span class="helpwrapper"><a href="#" class="help alt">?</a><div class="instructions"><i>Google is free, why does this cost anything?</i><br>Google charges for image queries via their custom search API. Using Google Images in this fashion (e.g. via a JavaScript scraper in the browser) would be against their TOS. I built this tool to help retailers prep their product images for eCommerce quickly and easily. </div></span>
+
+</p>
+
+<div class="token">
+	<label for="token">Your current token:</label>
+	<input name="token" type='text' disabled value="<?php echo $data['token'];?>"><br>
+	<label for="credits">Credits available:</label>
+	<input name="credits" type='text' value="<?php echo $data['credits'];?>" size="4" ><br>
+	<input type="button" value="" id="ppbutton" class="btn bigbutton btn-primary pp">
+</div>
