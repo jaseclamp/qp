@@ -1,5 +1,5 @@
 <?php
-class Effusant_Quickpic_Block_Adminhtml_Remote extends Mage_Adminhtml_Block_Widget
+class Refracter_Quickpic_Block_Adminhtml_Remote extends Mage_Adminhtml_Block_Widget
 {
 	
 	public function __construct()

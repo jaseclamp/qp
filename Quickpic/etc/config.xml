@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <Effusant_Quickpic>
+        <Refracter_Quickpic>
             <version>1.0</version>
-        </Effusant_Quickpic>
+        </Refracter_Quickpic>
     </modules>
     <global>
         <models>
             <quickpic>
-                <class>Effusant_Quickpic_Model</class>
+                <class>Refracter_Quickpic_Model</class>
             </quickpic>
         </models>
         <resources>
             <quickpic_setup>
                 <setup>
-                    <module>Effusant_Quickpic</module>
+                    <module>Refracter_Quickpic</module>
                 </setup>
                 <connection>
                     <use>core_setup</use>
@@ -33,12 +33,12 @@
         </resources>
 		<blocks>
             <quickpic>
-                <class>Effusant_Quickpic_Block</class>
+                <class>Refracter_Quickpic_Block</class>
             </quickpic>
         </blocks>
 		<helpers>
             <quickpic>
-                <class>Effusant_Quickpic_Helper</class>
+                <class>Refracter_Quickpic_Helper</class>
             </quickpic>
         </helpers>
     </global>
@@ -47,7 +47,7 @@
             <quickpic>
                 <use>admin</use>
                 <args>
-                    <module>Effusant_Quickpic</module>
+                    <module>Refracter_Quickpic</module>
                     <frontName>quickpic</frontName>
                 </args>
             </quickpic>
@@ -55,7 +55,7 @@
             <adminhtml>
                 <args>
                     <modules>
-                        <quickpic before="Mage_Adminhtml">Effusant_Quickpic_Adminhtml</quickpic>
+                        <quickpic before="Mage_Adminhtml">Refracter_Quickpic_Adminhtml</quickpic>
                     </modules>
                 </args>
             </adminhtml>

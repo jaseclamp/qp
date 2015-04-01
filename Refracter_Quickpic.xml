@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Refracter_Quickpic>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Refracter_Quickpic>
+    </modules>   
+</config> 

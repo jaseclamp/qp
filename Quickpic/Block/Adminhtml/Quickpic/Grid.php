@@ -1,6 +1,6 @@
 <?php
 
-class Effusant_Quickpic_Block_Adminhtml_Quickpic_Grid extends Mage_Adminhtml_Block_Widget_Grid
+class Refracter_Quickpic_Block_Adminhtml_Quickpic_Grid extends Mage_Adminhtml_Block_Widget_Grid
 {
     public function __construct()
     {
@@ -74,7 +74,7 @@ class Effusant_Quickpic_Block_Adminhtml_Quickpic_Grid extends Mage_Adminhtml_Blo
             'align' => 'left',
             'index' => 'image',
             'width'     => '70',
-            'renderer' => 'Effusant_Quickpic_Block_Adminhtml_Quickpic_Thumbnail'
+            'renderer' => 'Refracter_Quickpic_Block_Adminhtml_Quickpic_Thumbnail'
         ));*/ 
 		$this->addColumn('name',
             array(

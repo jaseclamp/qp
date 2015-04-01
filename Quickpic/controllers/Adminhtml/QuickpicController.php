@@ -1,5 +1,5 @@
 <?php
-class Effusant_Quickpic_Adminhtml_QuickpicController extends Mage_Adminhtml_Controller_Action
+class Refracter_Quickpic_Adminhtml_QuickpicController extends Mage_Adminhtml_Controller_Action
 {
 
    public function indexAction() {
