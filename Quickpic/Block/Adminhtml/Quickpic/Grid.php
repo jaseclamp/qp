@@ -25,9 +25,6 @@ class Refracter_Quickpic_Block_Adminhtml_Quickpic_Grid extends Mage_Adminhtml_Bl
 		$collection->addAttributeToFilter('image', array('eq' => 'no_selection'));
         
 		//$collection->joinAttribute('image', 'catalog_product/image', 'entity_id', null, 'left');
-		
-		$collection->joinAttribute('status', 'catalog_product/status', 'entity_id', null, 'inner');
-        $collection->joinAttribute('visibility', 'catalog_product/visibility', 'entity_id', null, 'inner');
 
 		$this->setCollection($collection);
 		return parent::_prepareCollection();
