@@ -10,4 +10,15 @@
 			<block type="core/template"  name="modal"  template="quickpic/modal.phtml"/>
         </reference>
     </quickpic_adminhtml_quickpic_index>
+	<quickpic_adminhtml_quickpic_edit>
+        <reference name="head">
+           <action method="addCss"><name>css/quickpic/quickpic.css</name></action>
+		   <action method="addJs"><name>quickpic/quickpic.js</name></action>
+        </reference>
+		<reference name="content">
+            <block type="quickpic/adminhtml_remote"  name="intro"  template="quickpic/intro.phtml"/>
+			<block type="core/template"  name="modal"  template="quickpic/modal.phtml"/>
+			<block type="quickpic/adminhtml_edit"  name="edit"  template="quickpic/edit.phtml"/>
+        </reference>
+    </quickpic_adminhtml_quickpic_edit>
 </layout>

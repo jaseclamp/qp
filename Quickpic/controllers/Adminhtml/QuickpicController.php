@@ -17,11 +17,22 @@ class Refracter_Quickpic_Adminhtml_QuickpicController extends Mage_Adminhtml_Con
 		$this->renderLayout();      
     }
 	
+	public function editAction() {
+       
+        $this->loadLayout();
+		
+		$this->_setActiveMenu('catalog/quickpic_menu');
+		
+		$this->_addBreadcrumb(Mage::helper('adminhtml')->__('QuickPic'), Mage::helper('adminhtml')->__('QuickPic'));
+		
+		$this->renderLayout();      
+    }
+	
 	public function gridAction()
     {
         $this->loadLayout();
         $this->getResponse()->setBody(
-            $this->getLayout()->createBlock('effusant_quickpic/adminhtml_quickpic_grid')->toHtml()
+            $this->getLayout()->createBlock('refracter_quickpic/adminhtml_quickpic_grid')->toHtml()
         );
     }
     

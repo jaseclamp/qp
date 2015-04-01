@@ -5,7 +5,7 @@ class Refracter_Quickpic_Block_Adminhtml_Quickpic_Grid extends Mage_Adminhtml_Bl
     public function __construct()
     {
 		parent::__construct();
-		$this->setId('effusant_quickpic_grid');
+		$this->setId('refracter_quickpic_grid');
 		$this->setSaveParametersInSession(true);
 		$this->setDefaultSort('increment_id');
 		$this->setDefaultDir('desc');
@@ -60,7 +60,6 @@ class Refracter_Quickpic_Block_Adminhtml_Quickpic_Grid extends Mage_Adminhtml_Bl
 		$this->addColumnAfter('thumbnail',
 			array(
 				'header'=> Mage::helper('catalog')->__('Thumbnail'),
-				'width' => '50px',
 				'index' => 'thumbnail',
 				'type' => 'options',
 				'frame_callback' => array($this, 'callback_image'),
@@ -78,6 +77,7 @@ class Refracter_Quickpic_Block_Adminhtml_Quickpic_Grid extends Mage_Adminhtml_Bl
 		$this->addColumn('name',
             array(
                 'header'=> Mage::helper('catalog')->__('Name'),
+				'width' => '50px',
                 'index' => 'name',
         ));
 		
