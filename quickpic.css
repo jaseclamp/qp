@@ -49,3 +49,17 @@ h1.qplogo {
 }
 h1.qplogo a { color: #312002; }
 h1.qplogo a:hover { color: #312002; text-decoration:none; }
+
+
+div.qpthumb { margin: 10px; float:left;  }
+div.qpthumb a { border: 1px solid #8fa3bc; padding: 10px; display: block; position: relative; text-align:center; }
+div.qpthumb a:hover { border-color: #357ebd;  }
+div.qpthumb a:hover .edit { display: block; }
+div.qpthumb a .helper {height: 150px; vertical-align: top; width: 0; display: inline-block; }
+div.qpthumb a img { display: inline-block; }
+div.qpthumb span.title { width: 100%; text-align: center; display:block; padding-top: 10px; }
+div.qpthumb a.next { background-color: #8fa3bc; color: white; }
+div.qpthumb a.next:hover { text-decoration:none; background-color: #3276b1; border-color: #285e8e; }
+div.qpthumb a.none { color: #3276b1; width: 150px; text-align: center; text-decoration:none; }
+div.qpthumb a.none:hover { background-color: #8fa3bc; color:white; text-decoration:none; }
+div.qpthumb a .edit { position: absolute; z-index: 2; top: 3px; right: 3px; width: 24px; height: 24px; fill: #3276b1; display: none; }
