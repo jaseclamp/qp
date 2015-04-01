@@ -1,0 +1,21 @@
+<?php 
+
+$images = $this->getImages();
+
+//$return[] = array( 'src' => $result['link'], 'rel' => $result['modelData']['image']['contextLink'], 'thumb' =>$result['modelData']['image']['thumbnailLink'], 'query' => $query, 'row' => $index, 'table' => $table );
+
+$template = "<div class='thumb'><a href='{{src}}' rel='{{rel}}' id='row_{{row}}' title='{{table}}'><span class='helper'></span><img src='{{thumb}}'></a><span class='title'>{{query}}</span></div>";
+
+$output = '';
+
+foreach($images as $image){
+
+	$row = $template;
+
+	foreach($image as $key => $value) $row = str_replace( '{{'.$key.'}}' , $value , $row );
+	
+	$output .= $row;
+
+}
+
+echo $output;
