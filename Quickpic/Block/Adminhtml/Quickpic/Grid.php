@@ -137,6 +137,7 @@ class Refracter_Quickpic_Block_Adminhtml_Quickpic_Grid extends Mage_Adminhtml_Bl
 		$width = 70;
 		$height = 70;
 		if($value=='No')
+		{
 			$value = 'http://placehold.it/'.$width.'/'.$height.'.png?text=No+Image';
 			return "<img src='".$value."' width=".$width." height=".$height."/>";
 		}
