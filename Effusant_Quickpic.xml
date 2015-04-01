@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<config>
-    <modules>
-        <Effusant_Quickpic>
-            <active>true</active>
-            <codePool>local</codePool>
-        </Effusant_Quickpic>
-    </modules>   
-</config> 
