@@ -69,6 +69,7 @@ class Refracter_Quickpic_Block_Adminhtml_Quickpic_Grid extends Mage_Adminhtml_Bl
 				'frame_callback' => array($this, 'callback_image'),
 				'options' => array('no_selection' => 'No', '1' => 'Yes')
 		),'entity_id');
+		
         /*$this->addColumn('image', array(
             'header' => Mage::helper('catalog')->__('Image'),
             'align' => 'left',
@@ -76,6 +77,7 @@ class Refracter_Quickpic_Block_Adminhtml_Quickpic_Grid extends Mage_Adminhtml_Bl
             'width'     => '70',
             'renderer' => 'Refracter_Quickpic_Block_Adminhtml_Quickpic_Thumbnail'
         ));*/ 
+		
 		$this->addColumn('name',
             array(
                 'header'=> Mage::helper('catalog')->__('Name'),
@@ -89,23 +91,6 @@ class Refracter_Quickpic_Block_Adminhtml_Quickpic_Grid extends Mage_Adminhtml_Bl
                 'index' => 'sku',
         ));
 
-		$this->addColumn('visibility',
-            array(
-                'header'=> Mage::helper('catalog')->__('Visibility'),
-                'width' => '70px',
-                'index' => 'visibility',
-                'type'  => 'options',
-                'options' => Mage::getModel('catalog/product_visibility')->getOptionArray(),
-        ));
-
-        $this->addColumn('status',
-            array(
-                'header'=> Mage::helper('catalog')->__('Status'),
-                'width' => '70px',
-                'index' => 'status',
-                'type'  => 'options',
-                'options' => Mage::getSingleton('catalog/product_status')->getOptionArray(),
-        ));
 		
         $this->addColumn('action',
             array(
@@ -151,6 +136,10 @@ class Refracter_Quickpic_Block_Adminhtml_Quickpic_Grid extends Mage_Adminhtml_Bl
 	{
 		$width = 70;
 		$height = 70;
+		if($value=='No')
+			$value = 'http://placehold.it/'.$width.'/'.$height.'.png?text=No+Image';
+			return "<img src='".$value."' width=".$width." height=".$height."/>";
+		}
 		return "<img src='".Mage::getBaseUrl('media').'catalog/product'.$value."' width=".$width." height=".$height."/>";
 	}
 
